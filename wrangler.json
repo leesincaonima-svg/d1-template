@@ -1,16 +1,22 @@
 {
-	"compatibility_date": "2025-10-08",
-	"main": "src/index.ts",
-	"name": "d1-template",
-	"upload_source_maps": true,
-	"d1_databases": [
-		{
-			"binding": "DB",
-			"database_id": "4aeaef33-ae3d-4e50-a4d7-34272900b9ee",
-			"database_name": "d1-template-database"
-		}
-	],
-	"observability": {
-		"enabled": true
-	}
+  "compatibility_date": "2025-10-08",
+  "main": "src/index.ts",
+  "name": "d1-template",
+  "upload_source_maps": true,
+  "vars": {
+    "MAIL_DOMAIN": "popchat.top",
+    "ADMIN_PASSWORD": "admin",
+    "JWT_TOKEN": "qweasd123zxc456",
+    "MAIL_EML": "skip_r2"
+  },
+  "d1_databases": [
+    {
+      "binding": "TEMP_MAIL_DB",
+      "database_id": "4aeaef33-ae3d-4e50-a4d7-34272900b9ee",
+      "database_name": "d1-template-database"
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
 }
